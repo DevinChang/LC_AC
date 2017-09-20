@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="1_TwoSum.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="2_AddTwoNumbers.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Array\1_TwoSum.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\2_AddTwoNumbers.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

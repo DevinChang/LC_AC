@@ -15,19 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="1_TwoSum.h">
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Array\1_TwoSum.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\2_AddTwoNumbers.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="4_MedianOfTwoSortedArrays.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="2_AddTwoNumbers.h">
+    <ClInclude Include="test.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="3_Longest Substring Without Repeating Characters.h">
       <Filter>头文件</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

@@ -26,5 +26,11 @@
     <ClInclude Include="Array\2_AddTwoNumbers.h">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="4_MedianOfTwoSortedArrays.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -70,8 +70,10 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="4_MedianOfTwoSortedArrays.h" />
     <ClInclude Include="Array\1_TwoSum.h" />
     <ClInclude Include="Array\2_AddTwoNumbers.h" />
+    <ClInclude Include="test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

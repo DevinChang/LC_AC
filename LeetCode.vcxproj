@@ -115,6 +115,7 @@
   <ItemGroup>
     <ClInclude Include="1_TwoSum.h" />
     <ClInclude Include="2_AddTwoNumbers.h" />
+    <ClInclude Include="3_Longest Substring Without Repeating Characters.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

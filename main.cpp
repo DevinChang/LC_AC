@@ -1,6 +1,6 @@
 #include "1_TwoSum.h"
 #include "2_AddTwoNumbers.h"
-
+#include "3_Longest Substring Without Repeating Characters.h"
 
 int main() {
 	//1.twosum
@@ -15,7 +15,7 @@ int main() {
 	*/
 
 	//2.add two numbers
-	ListNode *lhead = new ListNode(9), *l1 = new ListNode(9), *l2 = new ListNode(9);
+	/*ListNode *lhead = new ListNode(9), *l1 = new ListNode(9), *l2 = new ListNode(9);
 	lhead->next = l1;
 	l1->next = l2;
 	ListNode *rhead = new ListNode(1);
@@ -23,7 +23,12 @@ int main() {
 	while (rl) {
 		std::cout << rl->val << "-> ";
 		rl = rl->next;
-	}
+	}*/
+
+	//3.longest substring without repeating characters
+	std::string str("pwwkew");
+	auto len = lengthOfLongestSubstring(str);
+	std::cout << "the longest substring: " << len << std::endl;
 	system("pause");
 	return 0;
 }

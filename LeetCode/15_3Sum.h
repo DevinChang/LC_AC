@@ -16,7 +16,7 @@ A solution set is:
 */
 
 //2017/12/26 modify: 通过增加一些边界条件，减少循环的次数，从而减少运行的时间
-std::vector<std::vector<int>> treeSum(std::vector<int> &nums) {
+std::vector<std::vector<int>> threeSum(std::vector<int> &nums) {
 	std::vector<std::vector<int>> res;
 	std::sort(nums.begin(), nums.end());
 	

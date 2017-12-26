@@ -1,8 +1,9 @@
 #include <iostream>
 #include <vector>
-#include "4_MedianOfTwoSortedArrays.h"
+//#include "4_MedianOfTwoSortedArrays.h"
 //#include "test.h"
-#include "16_3SumCloset.h"
+//#include "16_3SumCloset.h"
+#include "18_4Sum.h"
 
 
 int main(){
@@ -14,9 +15,19 @@ int main(){
 	std::cout << "Error!!!" << std::endl;*/
 
 	//std::cout << "test: " << test(2.0, 3.0) << std::endl;
-	std::vector<int> vec{ -1, 1, 2, -4 };
+	/*std::vector<int> vec{ -1, 1, 2, -4 };
 	std::cout << "3 sum closet : " << std::endl;
 	std::cout << threeSumClosest(vec, 1) << std::endl;
+	*/
+	std::vector<int> s{ 1, 0, -1, 0, -2, 2 };
+	auto vec = fourSum(s, 0);
+	std::cout << "4 sum: " << std::endl;
+	for (auto v : vec){
+		for (auto p : v){
+			std::cout << p << " ";
+		}
+		std::cout << std::endl;
+	}
 	system("pause");
 	return 0;
 }

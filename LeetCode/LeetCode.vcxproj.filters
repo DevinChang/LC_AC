@@ -39,6 +39,9 @@
     <ClInclude Include="18_4Sum.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="26_Remove Duplicates from Sorted Array.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

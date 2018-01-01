@@ -23,28 +23,28 @@ class Solution {
 			continue;
 		}
 
-	int l = i + 1, r = nums.size() - 1;
-	while (l < r) {
-		int sum = nums[i] + nums[l] + nums[r];
-		if (sum == target) {
-			results.push_back({nums[left - 1], nums[i], nums[l], nums[r]});
-			++l;
-			--r;
-		} else if (sum < target) {
-			++l;
-		} else {
-			--r;
-		}
-	
-		while (l != i + 1 && l < r && nums[l] == nums[l - 1]) {
-			++l;
+		int l = i + 1, r = nums.size() - 1;
+		while (l < r) {
+			int sum = nums[i] + nums[l] + nums[r];
+			if (sum == target) {
+				results.push_back({nums[left - 1], nums[i], nums[l], nums[r]});
+				++l;
+				--r;
+			} else if (sum < target) {
+				++l;
+			} else {
+				--r;
 			}
-	
-		while (r != nums.size() - 1 && l < r && nums[r] == nums[r + 1]) {
-			--r;
+
+			while (l != i + 1 && l < r && nums[l] == nums[l - 1]) {
+				++l;
+			}
+
+			while (r != nums.size() - 1 && l < r && nums[r] == nums[r + 1]) {
+				--r;
+			}
 		}
-	}
-	}
+	  }
 	}
 public:
 vector<vector<int>> fourSum(vector<int>& nums, int target) {

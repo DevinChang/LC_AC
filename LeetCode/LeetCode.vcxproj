@@ -113,6 +113,7 @@
     <ClInclude Include="15_3Sum.h" />
     <ClInclude Include="16_3SumCloset.h" />
     <ClInclude Include="18_4Sum.h" />
+    <ClInclude Include="26_Remove Duplicates from Sorted Array.h" />
     <ClInclude Include="4_MedianOfTwoSortedArrays.h" />
     <ClInclude Include="Array\1_TwoSum.h" />
     <ClInclude Include="Array\2_AddTwoNumbers.h" />

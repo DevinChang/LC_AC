@@ -3,7 +3,8 @@
 //#include "4_MedianOfTwoSortedArrays.h"
 //#include "test.h"
 //#include "16_3SumCloset.h"
-#include "18_4Sum.h"
+//#include "18_4Sum.h"
+#include "26_Remove Duplicates from Sorted Array.h"
 
 
 int main(){
@@ -19,6 +20,7 @@ int main(){
 	std::cout << "3 sum closet : " << std::endl;
 	std::cout << threeSumClosest(vec, 1) << std::endl;
 	*/
+	/*
 	std::vector<int> s{ 1, 0, -1, 0, -2, 2 };
 	auto vec = fourSum(s, 0);
 	std::cout << "4 sum: " << std::endl;
@@ -28,6 +30,9 @@ int main(){
 		}
 		std::cout << std::endl;
 	}
+	*/
+	std::vector<int> vec{ 1, 1, 1, 2, 2, 3};
+	std::cout << removeDuplicates(vec) << std::endl;
 	system("pause");
 	return 0;
 }

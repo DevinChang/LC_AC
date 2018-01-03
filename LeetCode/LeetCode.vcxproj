@@ -114,10 +114,16 @@
     <ClInclude Include="16_3SumCloset.h" />
     <ClInclude Include="18_4Sum.h" />
     <ClInclude Include="26_Remove Duplicates from Sorted Array.h" />
+    <ClInclude Include="27_Remove_Element.h" />
     <ClInclude Include="4_MedianOfTwoSortedArrays.h" />
+    <ClInclude Include="Array\15_3Sum.h" />
+    <ClInclude Include="Array\16_3SumCloset.h" />
+    <ClInclude Include="Array\18_4Sum.h" />
     <ClInclude Include="Array\1_TwoSum.h" />
+    <ClInclude Include="Array\26_Remove Duplicates from Sorted Array.h" />
     <ClInclude Include="Array\2_AddTwoNumbers.h" />
     <ClInclude Include="Array\3_Longest Substring Without Repeating Characters.h" />
+    <ClInclude Include="Array\4_MedianOfTwoSortedArrays.h" />
     <ClInclude Include="test.h" />
   </ItemGroup>
   <ItemGroup>

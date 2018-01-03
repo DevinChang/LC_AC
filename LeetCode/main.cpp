@@ -4,7 +4,8 @@
 //#include "test.h"
 //#include "16_3SumCloset.h"
 //#include "18_4Sum.h"
-#include "26_Remove Duplicates from Sorted Array.h"
+//#include "Array/26_Remove Duplicates from Sorted Array.h"
+#include "27_Remove_Element.h"
 
 
 int main(){
@@ -30,9 +31,12 @@ int main(){
 		}
 		std::cout << std::endl;
 	}
-	*/
+	
 	std::vector<int> vec{ 1, 1, 1, 2, 2, 3};
 	std::cout << removeDuplicates(vec) << std::endl;
+	*/
+	std::vector<int> vec{ 3, 2, 2, 3 };
+	std::cout << removeElement(vec, 3) << std::endl;
 	system("pause");
 	return 0;
 }

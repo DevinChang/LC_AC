@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.15)
+project(Algorithm)
+
+set(CMAKE_CXX_STANDARD 11)
+
+add_executable(pufa pufa.cpp)
+add_executable(ac828 ac828.cpp)
+add_executable(ac842 ac842.cpp)
+add_executable(ac843 ac843.cpp)
+add_executable(ac831 ac831.cpp)
+add_executable(ac844 ac844.cpp)
+add_executable(ac789 ac789.cpp)
+add_executable(ac791 ac791.cpp)
+add_executable(ac792 ac792.cpp)
+add_executable(ac793 ac793.cpp)
+add_executable(ac61 ac61.cpp)

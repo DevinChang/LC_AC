@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/ac831.dir/ac831.cpp.o  -o ac831 

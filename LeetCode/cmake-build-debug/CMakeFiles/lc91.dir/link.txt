@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lc91.dir/LC91.cpp.o  -o lc91 

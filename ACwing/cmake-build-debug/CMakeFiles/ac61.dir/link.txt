@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/ac61.dir/ac61.cpp.o  -o ac61 

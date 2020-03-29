@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lc110.dir/LC110.cpp.o  -o lc110 

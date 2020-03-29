@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lc100.dir/LC100.cpp.o  -o lc100 

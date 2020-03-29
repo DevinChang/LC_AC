@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lc95.dir/LC95.cpp.o  -o lc95 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lc87.dir/LC87.cpp.o  -o lc87 

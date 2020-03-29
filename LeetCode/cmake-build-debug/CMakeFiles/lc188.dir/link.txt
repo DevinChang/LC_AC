@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lc188.dir/LC188.cpp.o  -o lc188 

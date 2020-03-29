@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lc300.dir/LC300.cpp.o  -o lc300 

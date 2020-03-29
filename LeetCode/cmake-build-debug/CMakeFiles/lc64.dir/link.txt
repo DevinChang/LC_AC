@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lc64.dir/LC64.cpp.o  -o lc64 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lc82.dir/LC82.cpp.o  -o lc82 

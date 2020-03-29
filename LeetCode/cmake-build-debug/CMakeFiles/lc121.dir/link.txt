@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lc121.dir/LC121.cpp.o  -o lc121 

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/devinchang/Code/LeetCode/LC95.cpp
+util.h
+/home/devinchang/Code/LeetCode/util.h
+
+/home/devinchang/Code/LeetCode/util.h
+bits/stdc++.h
+-
+

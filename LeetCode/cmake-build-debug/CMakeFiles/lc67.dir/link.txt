@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lc67.dir/LC67.cpp.o  -o lc67 

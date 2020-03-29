@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lc322.dir/LC322.cpp.o  -o lc322 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lc6.dir/LC338.cpp.o  -o lc6 

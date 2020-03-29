@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lc99.dir/LC99.cpp.o  -o lc99 

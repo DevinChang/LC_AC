@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lc62.dir/LC62.cpp.o  -o lc62 

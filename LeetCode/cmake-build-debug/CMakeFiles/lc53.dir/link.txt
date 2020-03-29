@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lc53.dir/LC53.cpp.o  -o lc53 

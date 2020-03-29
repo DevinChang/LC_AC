@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/ac844.dir/ac844.cpp.o  -o ac844 

@@ -1,2 +1,2 @@
 *.txt linguist-language=c++
-*.Makefile linguist-language=c++
+* Makefile linguist-language=c++

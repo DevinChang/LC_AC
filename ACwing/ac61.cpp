@@ -2,7 +2,10 @@
 // Created by devinchang on 2020/3/24.
 //
 
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
+#include <algorithm>
 using namespace std;
 
 const int N = 100010;

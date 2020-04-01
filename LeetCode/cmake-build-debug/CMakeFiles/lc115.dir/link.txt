@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/lc115.dir/LC115.cpp.o  -o lc115 

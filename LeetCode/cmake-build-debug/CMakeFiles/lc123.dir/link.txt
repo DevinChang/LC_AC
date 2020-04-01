@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/lc123.dir/LC123.cpp.o  -o lc123 

@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/lc10.dir/LC10.cpp.o  -o lc10 

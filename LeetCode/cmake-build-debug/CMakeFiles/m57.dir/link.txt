@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/m57.dir/M57.cpp.o  -o m57 

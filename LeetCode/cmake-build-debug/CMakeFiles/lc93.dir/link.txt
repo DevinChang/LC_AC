@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/lc93.dir/LC93.cpp.o  -o lc93 

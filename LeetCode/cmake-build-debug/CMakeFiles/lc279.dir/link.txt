@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/lc279.dir/LC279.cpp.o  -o lc279 

@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/lc44.dir/LC44.cpp.o  -o lc44 

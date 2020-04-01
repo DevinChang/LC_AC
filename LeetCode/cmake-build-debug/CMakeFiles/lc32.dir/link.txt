@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/lc32.dir/LC32.cpp.o  -o lc32 

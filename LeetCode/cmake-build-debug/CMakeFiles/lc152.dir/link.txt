@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/lc152.dir/LC152.cpp.o  -o lc152 

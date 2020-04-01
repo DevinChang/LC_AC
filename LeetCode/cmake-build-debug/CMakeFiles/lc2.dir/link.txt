@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/lc2.dir/LC213.cpp.o  -o lc2 

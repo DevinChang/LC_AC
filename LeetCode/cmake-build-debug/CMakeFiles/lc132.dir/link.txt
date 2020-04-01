@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/lc132.dir/LC132.cpp.o  -o lc132 

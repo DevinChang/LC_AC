@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/lc12.dir/LC120.cpp.o  -o lc12 

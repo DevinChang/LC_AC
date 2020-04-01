@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/lc264.dir/LC264.cpp.o  -o lc264 

@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/lc174.dir/LC174.cpp.o  -o lc174 

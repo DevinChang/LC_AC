@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/lc85.dir/LC85.cpp.o  -o lc85 

@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/lc625.dir/LC625.cpp.o  -o lc625 

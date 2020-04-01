@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/lc97.dir/LC97.cpp.o  -o lc97 

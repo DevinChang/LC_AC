@@ -1,5 +1,6 @@
 *.o
 *.exe
-.idea/
-cmake-build-debug/
+ACwing/.idea/
+LeetCode/.idea/
+ACwing/cmake-build-debug/
 .vscode

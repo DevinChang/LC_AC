@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/ac842.dir/ac842.cpp.o  -o ac842 

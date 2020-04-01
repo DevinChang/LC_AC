@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/ac828.dir/ac828.cpp.o  -o ac828 

@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/ac791.dir/ac791.cpp.o  -o ac791 

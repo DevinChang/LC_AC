@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/ac792.dir/ac792.cpp.o  -o ac792 

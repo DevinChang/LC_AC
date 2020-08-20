@@ -2,7 +2,10 @@
 // Created by devinchang on 2019/12/26.
 //
 
-#include "util.h"
+#include <iostream>
+#include <unordered_map>
+#include <unordered_set>
+using namespace std;
 
 
 void wordBreak_recur(string s, int pos, vector<string>& wordDict, vector<int> &isbreak) {
@@ -35,7 +38,7 @@ bool wordBreak_recur(string s, vector<string>& wordDict){
     return isbreak[s.size()-1] == 1;
 }
 
-bool wordBreak(string s, vector<string>& wordDict){
+bool wordBreak_On3(string s, vector<string>& wordDict){
     int len = s.size();
     vector<bool> dp(len+1, false);
     dp[0] = true;
@@ -53,6 +56,33 @@ bool wordBreak(string s, vector<string>& wordDict){
     return dp[len];
 }
 
+
+bool wordBreak(string s, vector<string>& wordDict){
+    typedef unsigned long long UUL; 
+    const int p = 133;
+    unordered_set<UUL> hash;
+    for(auto &word : wordDict) {
+        UUL h = 0;
+        for (auto c : word){
+            h = h * p + c;
+        }
+        hash.insert(h);
+    }
+    int n = s.size();
+    vector<bool> f(n+1);
+    f[n] = true;
+    for(int i = n-1; i >= 0; i--){
+        UUL h = 0;
+        for(int j = i; j < n; j++){
+            h = h * p + s[j];
+            if(hash.count(h) && f[j+1]){
+                f[i] = true;
+                break;
+            }
+        }
+    }
+    return f[0];
+}
 
 
 int main(){

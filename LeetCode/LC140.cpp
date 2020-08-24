@@ -75,6 +75,40 @@ vector<string> wordBreak_DP(string s, vector<string>& wordDict){
     return dp[len];
 }
 
+void dfs(string &s, int u, strint &path, vector<string> &ret, vector<bool> &f, unordered_set<string> &hash){
+    if (u == s.size()){
+        path.pop_back();
+        ret.push_back(path);
+        return;
+    }
+    for(int i = u; i < n; i++){
+        if(hash.count(s.substr(u, i - u + 1)) && f[i+1]) {
+            dfs(s, i+1, path+s.substr(u, i-u+1)+' ');
+        }
+    }
+}
+
+vector<string> wordBreak(string s, vector<string> &wordDict) {
+    unordered_set<string> hash;
+    int n = s.size();
+    for (auto word : wordDict){
+        hash.insert(word);
+    }
+    vector<bool> f(n+1);
+    f[n] = true;
+    for(int i = n-1; i >= 0; i--) {
+        for(int j = i; j < n; j++){
+            if(hash.count(s.substr(i, j)) && f[j+1]){
+                f[i] = true;
+                break;
+            }
+        }
+    }
+    vector<string> ret;
+    dfs(s, 0, "", ret, f, hash);
+    return ret;
+}
+
 
 int main(){
     string s1 = "catsanddog";

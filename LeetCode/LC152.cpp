@@ -5,6 +5,20 @@
 #include "util.h"
 
 
+
+int maxProduct(vector<int> &nums) {
+    int res = nums[0];
+    int f = nums[0], g = nums[0];
+    for (int i = 1; i < nums.size(); i ++ ) {
+        int a = nums[i], fa = f * a, ga = g * a;
+        f = max(a, max(fa, ga));
+        g = min(a, min(fa, ga));
+        res = max(res, f);
+    }
+    return res;;
+}
+
+
 int maxProduct_2DP(vector<int> &nums){
     int len = nums.size();
     if(len < 1)

@@ -20,7 +20,7 @@ int nthUglyNumber_1(int n){
 }
 
 
-int nthUglyNumber(int n){
+int nthUglyNumber2(int n){
     if(n < 1 || n > 1690)
         return 0;
     int index2 = 0, index3 = 0, index5 = 0;
@@ -36,6 +36,19 @@ int nthUglyNumber(int n){
             index5++;
     }
     return dp[n-1];
+}
+
+
+int nthUglyNumber(int n) {
+    vector<int> q(1, 1);
+    for(int i = 0, j = 0, z = 0; q.size() < n;){
+        int t = min(q[i] * 2, min(q[j] * 3, q[z] * 5));
+        q.push_back(t);
+        if(t == q[i] * 2) i++;
+        if(t == q[j] * 3) j++;
+        if(t == q[z] * 5) z++;
+    }
+    return q.back();
 }
 
 int main(){

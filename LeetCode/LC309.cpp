@@ -22,6 +22,24 @@ int maxProfit(vector<int>& prices){
     return max(s1[len-1], max(s2[len-1], s3[len-1]));
 }
 
+int maxProfit(vector<int> &prices){
+    int n = prices.size();
+    if(n < = 1) return 0;
+    const int INF = 100000;
+    int s1 = 0;
+    int s2 = -INF;
+    int s3 = -INF;
+    for(int i = 0; i < n; i++){
+        int new_s1 = max(s1, s3);
+        int new_s2 = max(s2, s1-prices[i]);
+        int new_s3 = s2 + prices[i];
+        s1 = new_s1;
+        s2 = new_s2;
+        s3 = new_s3;
+    }
+    return max(s1, max(s2, s3));
+}
+
 
 int main(){
     string line;

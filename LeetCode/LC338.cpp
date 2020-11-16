@@ -14,6 +14,14 @@ vector<int> countBits(int num){
     return dp;
 }
 
+vector<int> countBits(int num) {
+    vector<int> f(nums+1, 0);
+    for(int i = 1; i <= num; i++){
+        f[i] = f[i >> 1] + (i & 1);
+    }
+    return f;
+}
+
 
 
 int main(){

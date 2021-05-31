@@ -1,23 +1,26 @@
 class Solution {
 public:
-    int lenLongestFibSubseq(vector<int>& arr) {
-        int n = arr.size();
-        unordered_map<int,int> pos;
-        for(int i = 0; i < n; i++) pos[arr[i]] = i;
-        vector<vector<int>> f(n, vector<int>(n));
+    string get(int x, int y) {
+        return to_string(x) + '#' + to_string(y);
+    }
+    int robotSim(vector<int>& commands, vector<vector<int>>& obstacles) {
+        unordered_set<string> S;
+        for(auto b : obstacles) S.insert(get(b[0], b[1]));
+        int dx[4] = {0, 1, 0, -1}, dy[4] = {1, 0, -1, 0};
         int res = 0;
-        for(int i = 0; i < n; i++) {
-            for(int j = 0; j < i; j++) {
-                int x = arr[i] - arr[j];
-                f[i][j] = 2;
-                if(x < arr[j] && pos.count(x)) {
-                    int k = pos[x];
-                    f[i][j] = max(f[i][j], f[j][k] + 1);
+        int x = 0, y = 0, d = 0;
+        for(auto c : commands) {
+            if (c == -2) d = (d + 3) % 4;
+            else if (c == -1) d = (d + 1) % 4;
+            else {
+                for(int i = 0; i < c; i++) {
+                    int a = x + dx[d], b = y + dy[d];
+                    if(S.count(get(a, b))) break;
+                    x = a, y = b;
+                    res = max(res, x * x + y * y);
                 }
-                res = max(res, f[i][j]);
             }
         }
-        if (res < 3) return 0;
         return res;
     }
 };

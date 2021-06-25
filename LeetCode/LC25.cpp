@@ -14,6 +14,23 @@ public:
 		ListNode *dummy = new ListNode(-1);
 		dummy->next = head;
 		auto pre = dummy;
-		while()
+		while(pre != nullptr) {
+			auto cur = pre;
+			for(int i = 0; i < k && cur != nullptr; i++)  cur = cur->next;
+			if(cur == nullptr) break;
+			auto p = pre->next;
+            auto c = p->next;
+			while(p != cur) {
+                auto tmp = c->next;
+                c->next = p;
+                p = c;
+                c = tmp;
+            }
+			auto next = pre->next;
+			pre->next = p;
+			next->next = c;
+            pre = next;
+		}
+		return dummy->next;
     }
 };

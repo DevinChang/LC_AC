@@ -1,54 +1,32 @@
-//
-// Created by devinchang on 2020/3/14.
-//
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-
-
-
-/* 排列数字 */
 
 
 const int N = 10;
 int path[N];
-bool state[N];
+bool st[N];
 int n;
 
 
-void dfs(int u){
-    if(u == n){
+void dfs(int u) {
+    if(u == n) {
         for(int i = 0; i < n; i++) printf("%d ", path[i]);
-        puts("");
+        printf("\n");
         return;
     }
-    for(int i = 1; i <= n; i++){
-        if(!state[i]){
-            path[u] = i;
-            state[i] = true;
+    for(int i = 0; i < n; i++) {
+        if(!st[i]) {
+            path[u] = i+1;
+            st[i] = true;
             dfs(u+1);
-            state[i] = false;
+            st[i] = false;
         }
     }
 }
 
 
-
-
-
-
-
-int main(){
+int main() {
     scanf("%d", &n);
     dfs(0);
-
-    vector<int> vec{1, 2, 3};
-    auto ret = sol.permute(vec);
-    for(auto vv : ret){
-        for(auto v : vv) printf("%d ", v);
-        printf("\n");
-    }
-
-
     return 0;
 }
-

@@ -13,7 +13,7 @@ vector<int> spiralOrder(vector<vector<int>> &matrix){
     vector<int> res;
     for(int i = 0; i < row * col; i++){
         // 一定要先初始化，要不然就会出现重复遍历
-        visit[a][b] = true;
+        visit[x][y] = true;
         res.push_back(matrix[x][y]);
         int a = x + dx[d], b = y + dy[d];
         if(a < 0 || a >= row || b < 0 || b >= col || visit[a][b]){

@@ -1,69 +1,43 @@
-//
-// Created by devinchang on 2020/3/21.
-//
-
-#include <bits/stdc++.h>
-
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <queue>
 using namespace std;
 
-const int N = 100010;
-
-int h[N], e[N], ne[N], idx;
-
-int d[N]; // 图的度
-int q[N]; // 数组模拟队列
-
-int n, m;
-
-void add(int a, int b){
-    e[idx] = b;
-    ne[idx] = h[a];
-    h[a] = idx++;
-}
 
 
-bool topsort()
-{
-    int hh = 0, tt = -1;
-
-    for (int i = 1; i <= n; i ++ )
-        if (!d[i])
-            q[ ++ tt] = i;
-
-    while (hh <= tt)
-    {
-        int t = q[hh ++ ];
-
-        for (int i = h[t]; i != -1; i = ne[i])
-        {
-            int j = e[i];
-            if (-- d[j] == 0)
-                q[ ++ tt] = j;
+int main() {
+    int n,m;
+    cin >> n >> m;
+    vector<vector<int>> g(n+10);
+    vector<int> d(n+10);
+    while(m--) {
+        int x, y;
+        cin >> x >> y;
+        g[x].push_back(y);
+        d[y]++;
+    }
+    queue<int> q;
+    for(int i = 1; i <= n; i++) {
+        if(d[i] == 0) q.push(i);
+    }
+    int cnt = 0;
+    vector<int> res;
+    while(q.size())  {
+        auto t = q.front();
+        cnt++;
+        q.pop();
+        res.push_back(t);
+        for(auto x : g[t]) {
+            if(--d[x] == 0) {
+                q.push(x);
+            }
         }
     }
-
-    return tt == n - 1;
-}
-
-
-
-int main(){
-    scanf("%d%d", &n, &m);
-    memset(h, -1, sizeof h);
-
-    for(int i = 0; i < m; i ++){
-        int a, b;
-        scanf("%d%d", &a, &b);
-        add(a, b);
-        d[b]++;
+    if(cnt != n) {
+        puts("-1");
+        return 0;
     }
-
-    if(!topsort()) puts("-1");
-    else{
-        for(int i = 0; i < n; i++) printf("%d ", q[i]);
-        puts("");
-    }
-
+    for(int i = 0; i < res.size(); i++) cout << res[i] << " ";
     return 0;
 }
-

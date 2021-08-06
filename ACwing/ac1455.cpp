@@ -7,9 +7,9 @@ int a[N];
 
 /*
 约瑟夫环公式：
-f(N, M) = (f(N-1, M) + M) % M
+f(N, M) = (f(N-1, M) + M) % N
 ->
-f(i, M) = (f(i-1, a[(N-i) % M])) % M
+f(i, M) = (f(i-1, a[(N-i) % M])) % N
 */
 
 

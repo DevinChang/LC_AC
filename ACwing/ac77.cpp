@@ -1,26 +1,14 @@
-#include <iostream>
-#include <string>
-#include <algorithm>
-using namespace std;
-
 class Solution {
 public:
     string reverseWords(string s) {
-        int len = s.size();
-        if(len < 1) return "";
-        
-        int idx = 0;
+        int n = s.size();
         reverse(s.begin(), s.end());
-        
-        for(int i = 0; i < len; i++){
-            if(s[i] == ' ') continue;
-
+        for(int i = 0; i < n; i++) {
             int j = i;
-            while(j < len && s[j] != ' ') s[idx++] = s[j++];
-
-            reverse(s.begin() + idx + (j - i), s.begin() + idx);
+            while(j < n && s[j] != ' ') j++;
+            reverse(s.begin() + i, s.begin() + j);
+            i = j;
         }
         return s;
     }
-
 };
